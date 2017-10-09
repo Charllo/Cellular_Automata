@@ -51,6 +51,10 @@ def tick():
 
 init_cells()
 while 1:
-    print_cells()
-    tick()
-    sleep(0.1)
+    try:
+        print_cells()
+        tick()
+        sleep(0.1)
+    except ValueError:
+        pass
+        
